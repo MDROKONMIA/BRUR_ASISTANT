@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verification">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/mt"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_icon_prev"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Enter your 4-digit code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_md" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_1.5"
+            android:fontFamily="@font/opensansbold"
+            android:text="Code"
+            android:textColor="@color/dim_gray"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensanssemibold"
+            android:includeFontPadding="true"
+            android:inputType="phone"
+            android:lineHeight="19dp"
+            android:hint="- - - - - -"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@mipmap/ic_round_next"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_marginTop="28dp"-->
+    <!--        android:layout_marginRight="@dimen/mt"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout" /> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_round_next"
+            android:layout_marginRight="@dimen/mt"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/mt"
+        android:gravity="start|center_vertical"
+        android:fontFamily="@font/opensanssemibold"
+        android:textColor="@color/btn_bg_color"
+        android:textSize="@dimen/text_normal"
+        android:text="Resend Code"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="@dimen/mt_0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_copyright_19"
+            android:fontFamily="@font/magraregular"
+            android:gravity="center"
+            android:text="  Developed by CSE Department ,BRUR"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

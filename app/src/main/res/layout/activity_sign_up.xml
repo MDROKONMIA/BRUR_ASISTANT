@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/opensansbold"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_subtitle"  />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/opensanssemibold"
+                android:text="Enter your credentials to continue"
+                android:textColor="@color/dim_gray"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Email or Student ID"
+                android:textColor="@color/dim_gray"
+                android:fontFamily="@font/opensansbold"
+                android:textSize="@dimen/text_normal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_check"
+                android:hint="MD ROKON MIA"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensanssemibold"
+                android:layout_marginTop="@dimen/mt_0.5"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mt_1.5"
+                android:text="Email or Student ID"
+                android:textColor="@color/dim_gray"
+                android:fontFamily="@font/opensansbold"
+                android:textSize="@dimen/text_normal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_check"
+                android:hint="cse1905031brur@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensanssemibold"
+                android:layout_marginTop="@dimen/mt_0.5"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mt_1.5"
+                android:text="Password"
+                android:textColor="@color/dim_gray"
+                android:fontFamily="@font/opensansbold"
+                android:textSize="@dimen/text_normal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_visibility_off"
+                android:hint="**********"
+                android:layout_marginTop="@dimen/mt_0.5"
+                android:inputType="textPassword|textWebPassword|textVisiblePassword"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensanssemibold"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By continuing you agree to our"
+                    android:fontFamily="@font/opensanssemibold"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Term of Service"
+                    android:textColor="@color/medium_sea_green"
+                    android:fontFamily="@font/opensanssemibold"
+                    android:textSize="14dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text=" and"
+                    android:textSize="14dp"
+                    android:textColor="@color/dim_gray" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Policy Privecy"
+                android:textSize="14dp"
+                android:fontFamily="@font/opensanssemibold"
+                android:textColor="@color/medium_sea_green"/>
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/textView5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensansbold"
+                android:textSize="@dimen/text_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                app:layout_constraintHorizontal_bias="0.0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="Already have an account?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sm"/>
+
+                <TextView
+                    android:id="@+id/textSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Sign in"
+                    android:fontFamily="@font/opensansbold"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/medium_sea_green" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="@dimen/mt_0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_copyright_19"
+                    android:fontFamily="@font/magraregular"
+                    android:gravity="center"
+                    android:text="  Developed by CSE Department ,BRUR"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

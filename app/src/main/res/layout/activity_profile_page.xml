@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:src="@drawable/rokon"
+            app:civ_border_width="5dp"
+            android:layout_gravity="center"
+            app:civ_border_color="@color/dim_gray"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MD. ROKON MIA"
+                android:fontFamily="@font/opensansbold"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_subtitle"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Honours (2019-20)"
+                android:fontFamily="@font/opensansbold"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_md"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department of Computer Science and Engineering"
+                android:fontFamily="@font/opensanscondensedbold"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_md"
+                android:textColor="@color/dim_gray"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faculty of Engineering and Technology"
+                android:fontFamily="@font/opensanscondensedbold"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_md"
+                android:textColor="@color/dim_gray"
+                android:gravity="center"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp">
+
+<!--                Department-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:fontFamily="@font/opensanscondensedbold"-->
+<!--                    android:text="Department :"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/text_md"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_columnWeight="12"-->
+<!--                    android:text="CSE"-->
+<!--                    android:fontFamily="@font/opensanscondensedbold"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:textSize="@dimen/text_md"-->
+<!--                    android:textColor="@color/black"/>-->
+
+<!--&lt;!&ndash;                Faculty&ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:text="Faculty :"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:fontFamily="@font/opensanscondensedbold"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="@dimen/text_md"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_columnWeight="12"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:text="Engineering and Technology"-->
+<!--                    android:fontFamily="@font/opensanssemibold"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="@dimen/text_md"-->
+<!--                    android:textColor="@color/black"/>-->
+
+<!--                Id-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:text="ID :"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/opensanscondensedbold"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_md"
+                    android:textColor="@color/dim_gray"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="1905031"
+                    android:fontFamily="@font/opensanssemibold"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_md"
+                    android:textColor="@color/dim_gray"/>
+
+                <!--                Reg-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:text="REG :"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/opensanscondensedbold"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_md"
+                    android:textColor="@color/dim_gray"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="12"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="000012759"
+                    android:fontFamily="@font/opensanscondensedbold"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_md"
+                    android:textColor="@color/dim_gray"/>
+
+                <!--                Hall-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:text="Hall :"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/opensanscondensedbold"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_md"
+                    android:textColor="@color/dim_gray"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="12"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Bangabandhu Sheikh Mujibur Rahman Hall"
+                    android:fontFamily="@font/opensanscondensedbold"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_md"
+                    android:textColor="#45413C"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    copyright-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="@dimen/mt_0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_copyright_19"
+            android:fontFamily="@font/magraregular"
+            android:gravity="center"
+            android:text="  Developed by CSE Department ,BRUR"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

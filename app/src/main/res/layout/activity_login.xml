@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meant_cream"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Log In"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_subtitle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/opensanssemibold"
+            android:text="Enter your email and password"
+            android:textColor="@color/dim_gray"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="Email or Student ID"
+            android:textColor="@color/dim_gray"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_0.5"
+            android:drawableEnd="@drawable/ic_baseline_check"
+            android:fontFamily="@font/opensanssemibold"
+            android:hint="cse1905031brur@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_1.5"
+            android:fontFamily="@font/opensansbold"
+            android:text="Password"
+            android:textColor="@color/dim_gray"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_0.5"
+            android:drawableEnd="@drawable/ic_baseline_visibility_off"
+            android:fontFamily="@font/opensanssemibold"
+            android:hint="**********"
+            android:inputType="textPassword|textWebPassword|textVisiblePassword"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/opensanssemibold"
+            android:text="Forgot Password?"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sm" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/mt_1.5"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/opensansbold"
+            android:gravity="center"
+            android:text="Log In"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_1.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:text="Don't have an account?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:paddingLeft="10dp"
+                android:text="Sign Up"
+                android:textColor="@color/medium_sea_green" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+            android:layout_marginBottom="@dimen/mt_0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_copyright_19"
+                android:fontFamily="@font/magraregular"
+                android:gravity="center"
+                android:text="  Developed by CSE Department ,BRUR"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

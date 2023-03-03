@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="medium_sea_green">#3CB371</color>
+    <color name="meant_cream">#F5FFFA</color>
+    <color name="dark_gray">#A9A9A9</color>
+
+    <color name="dim_gray">#45413C</color>
+    <color name="btn_bg_color">#53B175</color>
+    <color name="black_70">#333333</color>
+
+<!--    Home page box color-->
+    <color name="bg_color_admission">#dcefe2</color>
+    <color name="outline_color_admission">#306942</color>
+
+    <color name="bg_form_fill_up">#fde4c9</color>
+    <color name="outline_form_fill_up">#934f06</color>
+
+    <color name="bg_profile">#f9bbae</color>
+    <color name="outline_profile">#f7a593</color>
+
+    <color name="bg_admitcard">#e9d7ef</color>
+    <color name="outline_admitcard">#D3B0E0</color>
+
+    <color name="outline_payment_history">#fbcd37</color>
+    <color name="bg_payment_history">#fef3cd</color>
+
+    <color name="outline_upload_payslip">#4bb0e7</color>
+    <color name="bg_upload_payslip">#d2ebf9</color>
+</resources>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BRUR Asistant"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansbold"
+            android:textSize="@dimen/text_subtitle"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+     <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:cardCornerRadius="@dimen/card_radius"
+         app:cardElevation="8dp"
+         app:cardBackgroundColor="@color/bg_upload_payslip"
+         android:layout_margin="16dp">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/admitcard_box"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:padding="5dp"
+             >
+             <ImageView
+                 android:layout_width="130dp"
+                 android:layout_height="110dp"
+                 android:src="@drawable/versity_logo"
+                 android:layout_gravity="left"
+                 tools:srcCompat="@drawable/versity_logo"/>
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_gravity="center_vertical">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Welcome to"
+                     android:fontFamily="@font/aclonicaregular"
+                     android:textSize="@dimen/text_subtitle"
+                     android:textColor="@color/black"/>
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="BRUR Asistant"
+                     android:textAllCaps="true"
+                     android:fontFamily="@font/opensansbold"
+                     android:textStyle="italic"
+                     android:gravity="center"
+                     android:textSize="@dimen/text_normal"
+                     android:textColor="@color/medium_sea_green"/>
+             </LinearLayout>
+         </LinearLayout>
+     </androidx.cardview.widget.CardView>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="3">
+
+<!--            Admission Card view-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="8dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/bg_color_admission">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admission_box"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="20dp"
+                   android:outlineProvider="bounds">
+                   <ImageView
+                       android:layout_width="111dp"
+                       android:layout_height="74dp"
+                       android:src="@drawable/admission"
+                       android:layout_gravity="center"
+                       tools:srcCompat="@drawable/admission"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Addmission"
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/black"
+                       android:layout_marginTop="20dp"
+                       android:gravity="center"
+                       android:layout_gravity="center_horizontal|center_vertical"/>
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            Form Fill Up Card View-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="8dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/bg_form_fill_up">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/form_fill_up_box"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="111dp"
+                        android:layout_height="74dp"
+                        android:src="@drawable/form_fill_up"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@drawable/form_fill_up"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Form Fill Up"
+                        android:textSize="@dimen/text_normal"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            Profile-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileBoxBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="8dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/bg_profile">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/profile_box"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="111dp"
+                        android:layout_height="74dp"
+                        android:src="@drawable/profile"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@drawable/profile"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textSize="@dimen/text_normal"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            Admit Card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="8dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/bg_admitcard">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/admitcard_box"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="111dp"
+                        android:layout_height="74dp"
+                        android:src="@drawable/admitcard"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@drawable/admitcard"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Admit Card"
+                        android:textSize="@dimen/text_normal"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            payment History card view-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="8dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/bg_payment_history">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/payment_history_box"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="111dp"
+                        android:layout_height="74dp"
+                        android:src="@drawable/paymenthistory"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@drawable/paymenthistory"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Payment History"
+                        android:textSize="@dimen/text_normal"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            upload payslip card view-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="8dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/bg_upload_payslip">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/upload_slip_box"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="111dp"
+                        android:layout_height="74dp"
+                        android:src="@drawable/upload_payslip"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@drawable/upload_payslip"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Payslip"
+                        android:textSize="@dimen/text_normal"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </GridLayout>
+
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
